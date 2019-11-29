@@ -1,0 +1,28 @@
+<button type="button" class="example6__button button" data-mjg-src="#video1" data-mjg-type="video">HTML5 Video — Appended</button>
+<!-- #video1 will be removed from DOM and inserted into the gallery. Append is the default method — data-mjg-method="append" is not necessary. -->
+
+<video id="video1" controls="" loop="" style="display:none">
+    <source src="examples/video/video1.mp4" type="video/mp4">
+    <source src="examples/video/video1.webm" type="video/webm">
+    <p>Your browser doesn't support HTML5 Video.</p>
+</video>
+
+<button type="button" class="example6__button button" data-mjg-src="#video2" data-mjg-type="video" data-mjg-method="clone">HTML5 Video — Cloned</button>
+<!-- #video2 will be cloned and inserted into the gallery. -->
+
+<video id="video2" controls="" loop="" style="display:none">
+    <source src="http://cdnfe3.azureedge.net/RCFServer1/ondemand/AMREMOBRS.mp4" type="video/mp4">
+    <source src="examples/video/video2.webm" type="video/webm">
+    <p>Your browser doesn't support HTML5 Video.</p>
+</video>
+
+<button type="button" class="example6__button button" data-mjg-src="#video3" data-mjg-type="video">HTML5 Video — Script Template</button>
+<!-- #video3 will be cloned and inserted into the gallery. -->
+
+<script id="video3" type="text/html">
+    <video controls loop>
+        <source src="examples/video/video3.mp4" type="video/mp4">
+        <source src="examples/video/video3.webm" type="video/webm">
+        <p>Your browser doesn't support HTML5 Video.</p>
+    </video>
+</script>
